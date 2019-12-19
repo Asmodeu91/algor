@@ -53,14 +53,14 @@ public class Main {
         for (int i = 0; i < 7; i++) {
             boxes.add(new Box(rand.nextInt(10), rand.nextInt(10)));
         }
-        System.out.println(boxes);
+        //System.out.println(boxes);
 //        boxes.bubbleSort(Comparator.comparingInt(a->a.getY()));
 //        boxes.bubbleSort(Comparator.comparingInt(a->a.getX()*a.getY()));
 //        boxes.bubbleSort((a, b) -> a.getX()- b.getX());
 //        boxes.bubbleSort(Comparator.comparing(Box::getY).reversed());
         boxes.bubbleSort(Comparator.comparingInt(Box::getX)
                 .thenComparingInt(Box::getY));
-        System.out.println(boxes);
+       // System.out.println(boxes);
 
     }
 }
